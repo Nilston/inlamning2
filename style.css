@@ -1,0 +1,43 @@
+#mainbit{
+  background-color: white;
+  border-radius: 3px;
+}
+#sokfilm{
+  background-color: white;
+  border-radius: 3px;
+}
+#article1{
+  background-color: blue;
+}
+#article2{
+  background-color: green;
+}
+#article3{
+  background-color: yellow;
+}
+.row{
+  margin: 10px;
+}
+footer{
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 1%;
+}
+
+@media screen and (max-width:768px){
+  body{
+    background-color: blue;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+  body{
+    background-color: green;
+  }
+}
+
+@media screen and (min-width: 993px){
+  body{
+    background-color: yellow;
+  }
+}
