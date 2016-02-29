@@ -1,11 +1,12 @@
 var urltype;
 var searchfield;
-console.log(searchmovie);
+console.log("searchmovie");
 $(".form-control").on("change", function(){
   searchfield = $('#searchmovie').val();
-  console.log(searchmovie);
-}
+  urltype ="http://www.omdbapi.com/?t=" + searchfield + "&y=&plot=short&r=json"
+});
 $("#sokomdb").on("click", function(){
+  console.log(urltype)
   $.ajax({
       url: urltype,
       dataType: "JSON",
@@ -13,6 +14,7 @@ $("#sokomdb").on("click", function(){
         escape: "javascript"
       }
     }).done(function(data){
-      $("#searchresult").text(data.value.rated).fadeIn(500);
+      console.log(data.Year);
+      $("#searchresult").text("Titel:" + data.Title + ", year: " + data.Year + ", plot: " + data.Plot ).fadeIn(500);
   });
 });
