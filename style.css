@@ -18,6 +18,11 @@
 .row{
   margin: 10px;
 }
+#poster{
+  height: 80%;
+  width: 80%;
+  border-radius: 3px;
+}
 footer{
   background-color: white;
   border-radius: 3px;
