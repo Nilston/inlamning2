@@ -1,3 +1,6 @@
+.headings{
+  font-weight: bolder;
+}
 #mainbit{
   background-color: white;
   border-radius: 3px;
@@ -6,9 +9,7 @@
   background-color: white;
   border-radius: 3px;
 }
-#article1{
-  background-color: blue;
-}
+
 #article2{
   background-color: green;
 }
@@ -19,6 +20,11 @@
   margin: 10px;
 }
 #poster{
+  height: 80%;
+  width: 80%;
+  border-radius: 3px;
+}
+#posterarkiv{
   height: 80%;
   width: 80%;
   border-radius: 3px;
